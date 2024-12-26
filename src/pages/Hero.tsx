@@ -2,10 +2,13 @@ import { Box, Button, TextField, Typography } from '@mui/material'
 
 import HeroSectionImage from '../assets/images/HeroSectionImage.jpg'
 import NavBar from '../components/Navbar'
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+    const navigate = useNavigate();
+    
     const handleSearchClick = () => {
-      
+      navigate('/form')
     }
 
   return (
