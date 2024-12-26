@@ -4,16 +4,47 @@ import NavBar from "../components/Navbar";
 import { useState } from "react";
 
 const LeadForm = () => {
+    const [name, setName] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
     const [role, setRole] = useState<string>("");
+    const [expectation, setExpectation] = useState<string>("");
 
-    // Update the type of the event parameter to SelectChangeEvent<string>
+    // Update the role state
     const handleRoleChange = (event: SelectChangeEvent<string>) => {
         setRole(event.target.value);
     };
 
-    const handleSubmit = (event: React.FormEvent) => {
+    // Handle form submission
+    const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        console.log('Register with role:', role);
+
+        const formData = {
+            name,
+            email,
+            role,
+            expectation,
+        };
+
+        try {
+            const response = await fetch("http://localhost:5000/api/leads", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to submit form");
+            }
+
+            // Handle success
+            const data = await response.json();
+            console.log("Form submitted successfully", data);
+        } catch (error) {
+            // Handle error
+            console.error("Error submitting form", error);
+        }
     };
 
     return (
@@ -76,6 +107,8 @@ const LeadForm = () => {
                             fullWidth
                             required
                             autoFocus
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                             sx={{
                                 mb: 2
                             }} 
@@ -86,6 +119,8 @@ const LeadForm = () => {
                             fullWidth
                             required
                             type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             sx={{
                                 mb: 2
                             }} 
@@ -109,6 +144,8 @@ const LeadForm = () => {
                             fullWidth
                             required
                             type="text"
+                            value={expectation}
+                            onChange={(e) => setExpectation(e.target.value)}
                             sx={{
                                 mb: 2
                             }} 
