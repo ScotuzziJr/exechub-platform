@@ -1,9 +1,17 @@
 import { Box, Button, TextField, Typography } from '@mui/material'
 
 import HeroSectionImage from '../assets/images/HeroSectionImage.jpg'
+import NavBar from '../components/Navbar'
 
 const Hero = () => {
+    const handleSearchClick = () => {
+      
+    }
+
   return (
+    <>
+      <NavBar />
+
       <Box
         sx={{
           position: 'relative',
@@ -71,13 +79,16 @@ const Hero = () => {
                   bgcolor: 'primary.dark',
                 },
               }}
+
+              onClick={handleSearchClick}
             >
               Search
             </Button>
           </Box>
         </Box>
       </Box>
-    )
+    </>
+  )
 }
 
 export default Hero
