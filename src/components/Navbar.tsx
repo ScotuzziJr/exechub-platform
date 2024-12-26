@@ -1,8 +1,15 @@
 import { AppBar, Toolbar, Box, Button } from '@mui/material';
 
 import ExecHubLogo from '../assets/images/ExecHub Logo Branco_1.png'
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
+    const navigate = useNavigate();
+
+    const handleForDevelopersClick = () => {
+        navigate('/form')
+    }
+
   return (
     <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
       <Toolbar
@@ -28,6 +35,7 @@ const NavBar = () => {
                 textTransform: 'none',
                 '&:hover': { bgcolor: 'primary.dark' },
                 }}
+                onClick={handleForDevelopersClick}
             >
             For developers
           </Button>
