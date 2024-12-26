@@ -1,8 +1,12 @@
+import NavBar from "./components/Navbar"
+import Hero from "./pages/Hero"
+
 function App() {
 
   return (
     <>
-      ExecHub
+      <NavBar />
+      <Hero />
     </>
   )
 }
