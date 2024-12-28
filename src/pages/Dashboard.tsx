@@ -2,7 +2,6 @@ import {
     Box,
     Button,
     Heading,
-    Highlight,
     Stack,
     Text
 } from '@chakra-ui/react';
@@ -24,14 +23,6 @@ const Dashboard = () => {
             {/* Header */}
             <Box as="header" textAlign="center" mb={6} justifyContent={'center'} alignItems={'center'} display={'flex'} flexDirection={'column'}>
                 <img src={ExecHubLogo} alt="Logo" style={{ maxWidth: '150px' }} />
-                <Text fontSize="xl" fontWeight="bold">
-                    <Highlight
-                        query={["contratar", "contratado"]}
-                        styles={{ px: "0.5", bg: "#ff4000", color: "orange.fg" }}
-                    >
-                        A revolução da forma de contratar e ser contratado.
-                    </Highlight>
-                </Text>
             </Box>
             <Box
                 h="lg"
