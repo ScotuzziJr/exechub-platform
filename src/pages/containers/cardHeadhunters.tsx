@@ -10,15 +10,17 @@ interface CardProps {
     description: string;
 }
 
-const CardsContainer = ({ title, description }: CardProps) => {
+const CardsHeadHunters = ({ title, description }: CardProps) => {
     return (
         <Box mt={60}>
             <Heading as="h3" size="4xl" mb={30} mt={50}>
-                Ganhe <b style={{
+                Conecte-se com <b style={{
                     color: "#ff4000"
-                }}>notoriedade</b> e <b style={{
+                }}>especialistas</b> e <b style={{
                     color: "#ff4000"
-                }}>impacte</b> carreiras com a <b style={{
+                }}>recrute</b> talentos de <b style={{
+                    color: "#ff4000"
+                }}>nível C</b> com a <b style={{
                     color: "#ff4000"
                 }}>ExecHub</b>.
             </Heading>
@@ -178,4 +180,4 @@ const CardsContainer = ({ title, description }: CardProps) => {
         </Box>
     )
 }
-export default CardsContainer;
+export default CardsHeadHunters;
