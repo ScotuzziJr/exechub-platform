@@ -1,15 +1,13 @@
 import { Avatar } from "@/components/ui/avatar";
-import { Tooltip } from "@/components/ui/tooltip";
 import { Box, Link, Text, VStack } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
 
 import { BsAwardFill } from "react-icons/bs";
 import { FaCalendarAlt, FaLinkedin } from 'react-icons/fa';
-import { FiHome, FiLogOut } from 'react-icons/fi';
+import { FiHome } from 'react-icons/fi';
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { ImProfile } from "react-icons/im";
-import { IoMdSettings } from "react-icons/io";
 import { IoWalletOutline } from 'react-icons/io5';
 import { RiContractFill } from "react-icons/ri";
 import ExecHubLogo from '../../assets/images/logo_laranja.png';
@@ -25,18 +23,21 @@ const Menu: React.FC = () => {
                 
                 <VStack
                     as="nav"
-                align="stretch"
-                zIndex={9}
+                    align="stretch"
+                    zIndex={9}
                     wordSpacing={4}
                     bg="#121212"
                     color="white"
                     p={4}
                     minW="280px"
-                    height="100vh"
+                height="100vh"
+                borderRightWidth={1}
+                borderColor="#414141"
                 >
                     <Box mb={10}>
-                        <img src={ExecHubLogo} alt="Logo" style={{ maxWidth: '100px' }} />
-                        <Box display={'flex'} >
+                    <img src={ExecHubLogo} alt="Logo" style={{ maxWidth: '100px' }} />
+                    <Text color={"#f1f1f1"}>Plataforma ExecHub</Text>
+                        <Box display={'flex'} mt={5}>
                             <Avatar mx={5} name="Wellington Ramos Bezerra" />
                             <Box>
                                 <Text textStyle="sm">Wellington Bezerra</Text>
@@ -55,26 +56,29 @@ const Menu: React.FC = () => {
                     {/* Atalhos */}
                     <Box>
 
-                        <Text textStyle="sm" mb={4} mt={5}>Atalhos</Text>
-                        <Box display={'flex'} flexDirection={'column'} h={200} p={4} borderRadius={8}>
-                            <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
-                                <FiHome size={22} style={{ marginRight: '8px' }} />
-                                Página Inicial
-                            </Link>
-                            <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
-                                <ImProfile size={22} style={{ marginRight: '8px' }} />
-                                Gerenciar Perfil
-                            </Link>
-                            <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
-                                <BsAwardFill size={22} style={{ marginRight: '8px' }} />
-                                Mentoria
-                            </Link>
-                        </Box>
+                    
+                    <Text textStyle="sm" mb={1} mt={3} p={2} borderBottomWidth={1} borderColor={"#F3F3F3"}> Atalhos </Text>
+                    
+                    
+                    <Box display={'flex'} flexDirection={'column'} h={200} p={4} borderRadius={8}>
+                        <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
+                            <FiHome size={22} style={{ marginRight: '8px' }} />
+                            Página Inicial
+                        </Link>
+                        <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
+                            <ImProfile size={22} style={{ marginRight: '8px' }} />
+                            Gerenciar Perfil
+                        </Link>
+                        <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
+                            <BsAwardFill size={22} style={{ marginRight: '8px' }} />
+                            Mentoria
+                        </Link>
+                    </Box>
                     </Box>
 
                     {/* Produtos */}
                     <Box>
-                        <Text textStyle="sm" mb={4} mt={5}>Produtos</Text>
+                    <Text textStyle="sm" mb={1} mt={3} borderBottomWidth={1} borderColor={"#F3F3F3"} p={2}>Produtos</Text>
 
                         <Box display={'flex'} flexDirection={'column'} h={200} p={4} borderRadius={8}>
                             <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
@@ -97,34 +101,6 @@ const Menu: React.FC = () => {
                         </Box>
                     </Box>
                 </VStack>
-            
-            <Box textAlign="center" position={"fixed"} zIndex={8} w={"full"} h={100} top={0} right={0}  color="white">
-                    <Box display="flex" justifyContent="end" alignItems="end" p={4}  color="white">
-                        
-                        <Box display="flex" alignItems="center" top={0} right={0} position={"fixed"} p={4} >
-                            <Tooltip
-                                open={openConfig}
-                                onOpenChange={(e) => setOpenConfig(e.open)}
-                                content="Configurações"
-                            >
-                            <Link href="#" p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="end">
-                                <IoMdSettings size={18} style={{ marginRight: '8px' }} />
-                                </Link>
-                            </Tooltip>
-
-                            <Tooltip
-                                content="Sair"
-                                open={open}
-                                
-                                onOpenChange={(e) => setOpen(e.open)}
-                            >
-                                <Link href="#" p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="end">
-                                    <FiLogOut size={18} style={{ marginRight: '8px' }} />
-                                </Link>
-                            </Tooltip>
-                        </Box>
-                    </Box>
-                </Box>
 
             </Box>
         
