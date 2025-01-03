@@ -1,4 +1,4 @@
-import { StatLabel, StatRoot, StatValueText } from "@/components/ui/stat";
+import { StatLabel, StatRoot } from "@/components/ui/stat";
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -207,34 +207,8 @@ const Plataforma: React.FC = () => {
                             <Link variant="plain" rounded="full" p={1} border={"1px solid #fff"} w={200} textAlign={"center"} display={"flex"} justifyContent={"center"}> <b>Ir para mentorias!</b></Link>
                         </Stack>
                     </div>
-
                 </BoxDefault>
-
-                <Box>
-                    <Heading as="h2" size="3xl" mb={2} color="#ff4000">Novas Oportunidades</Heading>
-                    <Box display={"grid"} gridTemplateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gridGap={4}>
-                        <StatRoot>
-                            <StatLabel>Novos perfis</StatLabel>
-                            <StatValueText
-                                value={935.4}
-                                formatOptions={{ style: "currency", currency: "USD" }}
-                            />
-                        </StatRoot>
-                        <StatRoot>
-                            <StatLabel>Vagas</StatLabel>
-                            <StatValueText
-                                value={935.4}
-                                formatOptions={{ style: "currency", currency: "USD" }}
-                            />
-                        </StatRoot>
-                        <StatRoot>
-                            <StatLabel>Mentorias liberadas</StatLabel>
-                            <StatValueText
-                                value={935.4}
-                                formatOptions={{ style: "currency", currency: "USD" }}
-                            />
-                        </StatRoot>
-                    </Box>
+                <Box p={10}>
 
                 </Box>
             </Container>

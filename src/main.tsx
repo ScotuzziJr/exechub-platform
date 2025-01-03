@@ -10,14 +10,18 @@ import { Provider } from "@/components/ui/provider";
 
 import "./globals.css";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Provider>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </ThemeProvider>
-    </Provider>
-  </StrictMode>
-)
+const Main = () => {
+  return (
+    <StrictMode>
+      <Provider themes={['dark', 'dark']} defaultTheme="dark">
+        <ThemeProvider theme={theme}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ThemeProvider>
+      </Provider>
+    </StrictMode>
+  );
+};
+
+createRoot(document.getElementById('root')!).render(<Main />);

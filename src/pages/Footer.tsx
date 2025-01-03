@@ -7,7 +7,7 @@ import { FaDiscord } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     return (
-        <Box as="footer" bg="gray.900" color="white" py={10}>
+        <Box as="footer" bg="gray.900" color="white" py={20}>
             <Flex justify="space-around" wrap="wrap">
                 <Box className="footer-section" mb={5}>
                     <Heading as="h4" size="md" mb={2} borderBottom="2px" borderColor="teal.500" pb={1}>Produtos</Heading>
@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
                 </Box>
                 <Box className="footer-section" mb={5}>
                     <Heading as="h4" size="md" mb={2}>Curtiu ?</Heading>
-                    <Button colorScheme="teal" variant="outline" mr={3}>Investidor anjo</Button>
-                    <Button colorScheme="teal" variant="outline">Quero ser parceiro!</Button>
+                    <Button colorScheme="teal" variant="outline" mr={3}>Investidor anjo 👼</Button>
+                    <Button colorScheme="teal" variant="outline">Quero ser parceiro! 🤝</Button>
                 </Box>
             </Flex>
 

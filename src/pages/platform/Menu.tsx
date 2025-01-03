@@ -6,7 +6,6 @@ import React, { useState } from 'react';
 import { BsAwardFill } from "react-icons/bs";
 import { FaCalendarAlt, FaLinkedin } from 'react-icons/fa';
 import { FiHome } from 'react-icons/fi';
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { ImProfile } from "react-icons/im";
 import { IoWalletOutline } from 'react-icons/io5';
 import { RiContractFill } from "react-icons/ri";
@@ -71,7 +70,7 @@ const Menu: React.FC = () => {
                         </Link>
                         <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
                             <BsAwardFill size={22} style={{ marginRight: '8px' }} />
-                            Mentoria
+                            Mentorias
                         </Link>
                     </Box>
                     </Box>
@@ -89,10 +88,6 @@ const Menu: React.FC = () => {
                             <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
                                 <FaCalendarAlt size={22} style={{ marginRight: '8px' }} />
                                 Agendas
-                            </Link>
-                            <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
-                                <HiOutlineRocketLaunch size={22} style={{ marginRight: '8px' }} />
-                                Mentoria
                             </Link>
                             <Link fontSize={14} href={"#"} p={2} _hover={{ bg: orangeDefault }} display="flex" alignItems="center">
                                 <RiContractFill size={22} style={{ marginRight: '8px' }} />

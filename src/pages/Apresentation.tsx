@@ -71,7 +71,7 @@ const Apresentation = () => {
         
 
             {/* Informativos*/}
-            <Box backgroundColor="" p={6} borderRadius="lg" shadow="lg" mb={6} position={'relative'}>
+            <Box backgroundColor="" p={40} borderRadius="lg" shadow="lg" mb={6} position={'relative'}>
                 <Box
                     color="white"
                     py={8}
@@ -81,9 +81,10 @@ const Apresentation = () => {
                     borderWidth={1}
                 >
                     <Box mb={6}>
-                        <Heading as="h2" size="4xl" mb={2} color="#ff4000">Interface Moderna 💎</Heading>
+                        <Heading as="h2" size="4xl" mb={2} color="#ff4000">Executivo por demanda💎</Heading>
+                        <Text fontSize="larger" mb={10} fontStyle="italic">Headhunters</Text>
                         <Text fontSize="larger">
-                            Nossa interface moderna e intuitiva foi projetada para proporcionar uma experiência de usuário excepcional. Navegue pela plataforma com facilidade e encontre exatamente o que você precisa em poucos cliques.
+                            Com a ExecHub, você pode contratar executivos por demanda, de acordo com as necessidades da sua empresa. Encontre os melhores profissionais para a sua empresa com a ExecHub.
                         </Text>
                     </Box>
                 </Box>
@@ -97,9 +98,10 @@ const Apresentation = () => {
                     borderWidth={1}
                 >
                     <Box mb={6}>
-                        <Heading as="h2" size="4xl" mb={2} color="#ff4000">Simples e Objetivo 💥</Heading>
+                        <Heading as="h2" size="4xl" mb={2} color="#ff4000">Profissinais com alta performance! 💥</Heading>
+                        <Text fontSize="larger" mb={10} fontStyle="italic">Headhunters</Text>
                         <Text fontSize="larger">
-                            A ExecHub foi projetada para ser simples e objetiva, proporcionando uma experiência de usuário intuitiva e eficiente. Encontre mentores, mentoreados e oportunidades de carreira em um só lugar.
+                            Com a ExecHub, você encontra profissionais com alta performance e experiência para atender as demandas da sua empresa. Contrate os melhores profissionais com a ExecHub.
                         </Text>
                     </Box>
                 </Box>
@@ -114,8 +116,26 @@ const Apresentation = () => {
                 >
                     <Box mb={6}>
                         <Heading as="h2" size="4xl" mb={2} color="#ff4000">Receba por Aula e por contratação 🤑</Heading>
+                        <Text fontSize="larger" mb={10}  fontStyle="italic">Executivos / Mentores</Text>
                         <Text fontSize="larger">
                             Com a ExecHub, você pode receber por cada aula ministrada e por cada contratação realizada. Aumente sua renda e expanda sua rede de contatos com a ExecHub.
+                        </Text>
+                    </Box>
+                </Box>
+
+                <Box
+                    color="white"
+                    py={8}
+                    px={4}
+                    shadow="lg"
+                    mb={6}
+                    borderWidth={1}
+                >
+                    <Box mb={6}>
+                        <Heading as="h2" size="4xl" mb={2} color="#ff4000">Tenha um ambiente de alto nível 🧠</Heading>
+                        <Text fontSize="larger" mb={10}>Profissionais</Text>
+                        <Text fontSize="larger" fontStyle="italic">
+                            Com a ExecHub, você tem acesso a um ambiente de alto nível, com profissionais qualificados e experientes. Aumente sua rede de contatos e faça parte da ExecHub.
                         </Text>
                     </Box>
                 </Box>

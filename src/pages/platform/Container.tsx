@@ -6,7 +6,7 @@ interface ContainerProps {
 }
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
-    return <Box position={"absolute"} left={300} top={110} h={10} zIndex={1} w={"10/12"}>{children}</Box>;
+    return <Box position={"absolute"} left={300} top={110} h={10} zIndex={1} w={"10/12"} px={40}>{children}</Box>;
 };
 
 export default Container;
