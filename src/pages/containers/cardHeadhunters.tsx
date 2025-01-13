@@ -20,7 +20,7 @@ const CardsHeadHunters = ({ title, description }: CardProps) => {
                     color: "#ff4000"
                 }}>recrute</b> talentos de <b style={{
                     color: "#ff4000"
-                }}>nível C</b> com a <b style={{
+                }}>níveis executivos</b> com a <b style={{
                     color: "#ff4000"
                 }}>ExecHub</b>.
             </Heading>
