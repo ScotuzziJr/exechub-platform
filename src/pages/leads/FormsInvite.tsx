@@ -1,13 +1,13 @@
 import {
     RadioCardItem,
-    RadioCardLabel,
-    RadioCardRoot,
+    RadioCardRoot
 } from "@/components/ui/radio-card";
 import { FormControl, FormLabel } from '@chakra-ui/form-control';
-import { Box, Button, Heading, HStack, Input, Text } from '@chakra-ui/react';
+import { Box, Button, Heading, HStack, Input, Link, Text } from '@chakra-ui/react';
 
 import React from 'react';
 import ExecHubLogo from '../../assets/images/logo_branco.png';
+import { orangeDefault } from "../tokensColors/tokens";
 
 const FormsInvite: React.FC = () => {
     const items = [
@@ -23,36 +23,80 @@ const FormsInvite: React.FC = () => {
                 base: "1rem",
                 sm: "4px",
                 md: "8px",
-                lg: "16px",
             }}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            background="linear-gradient(154deg, hsl(0deg 0% 0%),rgb(0, 0, 0),#ff4000,#000000);"
         >
-            <Box w={{ base: "12/12", sm: "12/12", md: "6/12", lg: "6/12" }} borderWidth={1} borderRadius="lg" p={4}>
-                <Box>
-                    <img src={ExecHubLogo} alt="Logo" style={{ height: '250px', width: 'auto' }} />
-                    <Heading as="h1" size="2xl" mb={4}>Descubra oportunidades incríveis conosco! 😉</Heading>
+            <Box w={{ base: "12/12", sm: "12/12", md: "6/12", lg: "6/12" }} borderWidth={1} borderRadius="lg" bgColor="#010101" p={{
+                base: "40px",
+
+            }}>
+                <Box mb={10}>
+                    <Box position={"relative"}>
+                        <img src={ExecHubLogo} alt="Logo" style={{ height: '250px', width: 'auto' }} />
+                        <Box
+                            as="svg"
+                            position="absolute"
+                            top="0%"
+                            left="70%"
+                            width="100px"
+                            height="100px"
+                            rotate="50deg"
+                        >
+                            <polygon
+                                points="50,0 100,100 0,100"
+                                fill={orangeDefault}
+                            />
+                        </Box>
+                        <Box
+                            as="svg"
+                            position="absolute"
+                            top="4%"
+                            left="75%"
+                            width="100px"
+                            height="100px"
+                            rotate="50deg"
+                        >
+                            <polygon
+                                points="50,0 100,100 0,100"
+                                fill="#f4f4f4"
+                            />
+                        </Box>
+                    </Box>
+                    
+                    <Heading as="h2" size="3xl" mb={2} color="#ff4000">Descubra oportunidades incríveis com a gente! 😉</Heading>
                     <Text>Preencha seus dados e garanta acesso <b color="#ff6a00">gratuito 🤯</b> à ExecHub, a plataforma que transforma carreiras e conecta talentos excepcionais a empresas de sucesso.</Text>
+
+                    <Link href="https://www.facebook.com/exechub" mt={4}>
+                        Visite nosso site!
+                    </Link>
                 </Box>
                 
                 
-                <Box mt={10}>
-                    <form>
-                        <FormControl id="name" mb={4}>
-                            <FormLabel color={"#ff6a00"}>Nome</FormLabel>
+                <Box mt={10} >
+                    <form style={{
+                        alignContent: "stretch",
+                        display: "flex",
+                        flexDirection: "column",
+                        flexWrap: "wrap",
+                        wordSpacing: "2px",
+                    }}>
+                        <FormControl id="name" mb={10}>
+                            <FormLabel color={"#fff"} mb={5}>Nome</FormLabel>
                             <Input type="text" />
                         </FormControl>
-                        <FormControl id="email" mb={4}>
-                            <FormLabel color={"#ff6a00"}>E-mail</FormLabel>
+                        <FormControl id="email" mb={10}>
+                            <FormLabel color={"#fff"} mb={5}>E-mail</FormLabel>
                             <Input type="email" />
                         </FormControl>
 
 
-                        <Box mt={6}>
+                        <Box mt={6} >
                             <RadioCardRoot defaultValue="next" style={{ borderColor: '#ff6a00' }} >
-                                <RadioCardLabel fontSize={26} mb={10} lineHeight={1.2}>Escolha a opção ideal para o seu perfil!</RadioCardLabel>
-                                <HStack align="stretch" display={"flex"} flexDirection={"column"}  wrap="wrap">
+                                <Heading as="h2" size="3xl" mb={2} color="#ff4000">Escolha a opção ideal para o seu perfil:</Heading>
+                                <HStack align="stretch" display={"flex"} flexDirection={"column"}  wrap="wrap" wordSpacing={2}>
                                     {items.map((item) => (
                                         <RadioCardItem
                                             label={item.title}
@@ -67,9 +111,10 @@ const FormsInvite: React.FC = () => {
                                     ))}
                                 </HStack>
                             </RadioCardRoot>
+                            <Button type="submit" variant="outline" color={"#ff6a00"} w={200} >Quero participar! 🤩</Button>
                         </Box>
                         
-                        <Button type="submit" variant="outline" color={"#ff6a00"}>Send Invite</Button>
+                        
                     </form>
                 </Box>
             </Box>
