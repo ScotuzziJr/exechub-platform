@@ -11,7 +11,7 @@ import Profile from "./pages/platform/profile";
 function App() {
   return (
     <Routes>
-      <Route path="/leads" element={<FormsInvite />} />
+      <Route path="/earlyadopers" element={<FormsInvite />} />
       <Route path="/payments" element={<PaymentPage />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/dashboard" element={<Plataforma />} />

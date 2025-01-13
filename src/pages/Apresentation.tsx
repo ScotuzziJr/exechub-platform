@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
 
+import { useNavigate } from 'react-router-dom';
 import ExecHubLogo from '../assets/images/logo_branco.png';
 import Segmentation from './dashboardHelpers/segregateSegmentations';
 import Footer from './Footer';
@@ -20,6 +21,10 @@ export const gradient = keyframes`
 `;
 
 const Apresentation = () => {
+
+
+    const navigation = useNavigate();
+    
     return (
         <Box minH="100vh">
             <Box p={{ sm: 0, md: 5, lg:30}}>
@@ -65,7 +70,10 @@ const Apresentation = () => {
                             <Link href='#informativos' >
                                 <Button colorScheme="orange" variant="solid">Saiba Mais ❓</Button>
                             </Link>
-                            <Button as="a" colorScheme="orange" variant="outline" borderColor="white" color="white">Comece Agora 🚀</Button>
+
+                            <Button as="a" onClick={() => navigation("/earlyadopers")} colorScheme="orange" variant="outline" borderColor="white" color="white">Comece Agora 🚀</Button>
+                            
+    
                         </Stack>
                     </Box>
                 </Box>
