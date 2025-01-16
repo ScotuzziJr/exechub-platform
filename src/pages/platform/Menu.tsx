@@ -1,6 +1,6 @@
 import { Avatar } from "@/components/ui/avatar";
 import { Box, Link, Text, VStack } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import React from 'react';
 
 
 import { BsAwardFill } from "react-icons/bs";
@@ -13,8 +13,8 @@ import ExecHubLogo from '../../assets/images/logo_laranja.png';
 import { orangeDefault } from '../tokensColors/tokens';
 
 const Menu: React.FC = () => {
-    const [open, setOpen] = useState(false)
-    const [openConfig, setOpenConfig] = useState(false)
+    // const [open, setOpen] = useState(false)
+    // const [openConfig, setOpenConfig] = useState(false)
 
     return (
     

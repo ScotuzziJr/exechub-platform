@@ -79,7 +79,7 @@ const Segmentation = () => {
                         </Box>
                     </Box>
                     
-                    <CardsContainer description="asdasdsa" title="Wellington Ramos Bezerra"></CardsContainer>
+                    <CardsContainer></CardsContainer>
                 </Tabs.Content>
 
                 <Tabs.Content value="projects" mb={30}>
@@ -135,7 +135,7 @@ const Segmentation = () => {
                         </Box>
                     </Box>
                     
-                    <CardsHeadHunters description="asdasdsa" title="Wellington Ramos Bezerra"></CardsHeadHunters>
+                    <CardsHeadHunters></CardsHeadHunters>
 
                     
                 </Tabs.Content>
@@ -193,7 +193,7 @@ const Segmentation = () => {
                         </Box>
                     </Box>
                     
-                    <CardsContainer description="asdasdsa" title=""></CardsContainer>
+                    <CardsContainer ></CardsContainer>
 
                     <Stack direction={{ base: "column", md: "row" }} wordSpacing={4} justify="center" mt={50} >
                         <Heading as="h3" size={{ base: "xl", md: "4xl" }} mb={2} textAlign={"center"}>

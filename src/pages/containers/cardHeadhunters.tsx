@@ -5,12 +5,8 @@ import { Rating, Typography } from "@mui/material";
 
 import { Tag } from "@/components/ui/tag";
 
-interface CardProps {
-    title: string;
-    description: string;
-}
 
-const CardsHeadHunters = ({ title, description }: CardProps) => {
+const CardsHeadHunters = () => {
     return (
         <Box mt={60}>
             <Heading as="h3" size="4xl" mb={30} mt={50}>

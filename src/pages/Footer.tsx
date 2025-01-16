@@ -1,7 +1,7 @@
 import { Badge, Box, Button, Flex, Heading, Link, Text } from '@chakra-ui/react';
 
 
-import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import { FaDiscord } from 'react-icons/fa';
 
@@ -35,14 +35,11 @@ const Footer: React.FC = () => {
 
             <Flex justify="center" mt={10}>
                 <Box className="footer-social" textAlign="center">
-                    <Heading as="h4" size="md" mb={2} color='#ff4000'>Siga-nos</Heading>
-                    <Link href="https://www.facebook.com/exechub" mr={4}>
-                        <FaFacebook /> Facebook
+                    <Heading as="h4" size="md" mb={2} color='#ff4000'>Siga-nos nas redes</Heading>
+                    <Link href="https://x.com/ExechubBr" mr={4}>
+                        <FaTwitter /> X
                     </Link>
-                    <Link href="https://www.twitter.com/exechub" mr={4} >
-                        <FaTwitter /> Twitter
-                    </Link>
-                    <Link href="https://www.linkedin.com/company/exechub">
+                    <Link href="https://www.linkedin.com/company/exechub/">
                         <FaLinkedin /> LinkedIn
                     </Link>
                 </Box>
