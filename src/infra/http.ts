@@ -1,0 +1,1 @@
+export const EXECHUB_BACKEND = "https://exechub.com.br:8000"

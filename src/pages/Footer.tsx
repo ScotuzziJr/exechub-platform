@@ -8,7 +8,7 @@ import { FaDiscord } from 'react-icons/fa';
 const Footer: React.FC = () => {
     return (
         <Box as="footer" bg="gray.900" color="white" py={20}>
-            <Flex justify={{ base: "center", md: "space-between" }} flexDirection={{ base: "center", sm: "column", md: "row" }} p={10}>
+            <Flex justify={{ base: "center", md: "space-between" }} flexDirection={{ base: "column", sm: "column", md: "row" }} p={10}>
                 <Box className="footer-section" mb={5} mt={10}>
                     <Heading as="h4" size="md" mb={2} borderBottom="2px" borderColor="teal.500" pb={1} color='#ff4000'>Produtos</Heading>
                     <Text mt={2}>Exechub - Mentors.</Text>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             </Flex>
             <Flex justify="center" mt={5}>
                 <Box className="footer-cnpj" textAlign="center" color='#ff4000'>
-                    <Text>CNPJ: 00.000.000/0000-00</Text>
+                    <Text>CNPJ: 35.014.434/000-125</Text>
                 </Box>
             </Flex>
         </Box>

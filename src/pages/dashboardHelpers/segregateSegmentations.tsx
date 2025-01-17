@@ -62,7 +62,7 @@ const Segmentation = () => {
                             borderRadius="lg"
                             overflow="hidden"
                             boxShadow="md"
-                            bgGradient="linear-gradient(150deg, hsl(15, 100.00%, 50.00%), #950095, #010e2d, #111111)"
+                            bgGradient="linear-gradient(150deg, #7b1f00,#000000,#000000,#7b1f00)"
                             bgSize="cover"
                             display="flex"
                             flexDirection="column"

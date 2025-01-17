@@ -48,7 +48,7 @@ const Apresentation = () => {
                     <Box
                         h="2xl"
                         bgBlendMode="multiply"
-                        bgGradient="linear-gradient(150deg, hsl(15, 100.00%, 50.00%), #950095, #010e2d, #111111)"
+                        bgGradient="linear-gradient(150deg, #ff4000,#000000,#000000, #ff4000, #050100)"
                         color="white"
                         rounded="lg"
                         p={6}
@@ -68,10 +68,10 @@ const Apresentation = () => {
                             Compartilhe sua experiência, transforme carreiras.              </Text>
                         <Stack direction="row" wordSpacing={4} justify="center" mt={4}>
                             <Link href='#informativos' >
-                                <Button colorScheme="orange" variant="solid">Saiba Mais ❓</Button>
+                                <Button colorScheme="orange" variant="solid">Informaçoes</Button>
                             </Link>
 
-                            <Button as="a" onClick={() => navigation("/earlyadopers")} colorScheme="orange" variant="outline" borderColor="white" color="white">Comece Agora 🚀</Button>
+                            <Button as="a" onClick={() => navigation("/earlyadopers")} colorScheme="orange" variant="outline" borderColor="white" color="white">Garantir Invite! 🚀</Button>
                             
     
                         </Stack>

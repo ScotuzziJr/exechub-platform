@@ -6,9 +6,9 @@ import { FormControl, FormLabel } from '@chakra-ui/form-control';
 import { Box, Button, Heading, HStack, Input, Link, Text } from '@chakra-ui/react';
 
 import { Toaster, toaster } from "@/components/ui/toaster";
+import { EXECHUB_BACKEND } from "@/infra/http";
 import React, { useState } from 'react';
 import ExecHubLogo from '../../assets/images/logo_branco.png';
-import { orangeDefault } from "../tokensColors/tokens";
 
 const FormsInvite: React.FC = () => {
     const [name, setName] = useState("")
@@ -21,7 +21,7 @@ const FormsInvite: React.FC = () => {
     const saveLead = async () => {
 
         try {
-            const requestSaveLead = await fetch("http://localhost:8000/api/lead", {
+            const requestSaveLead = await fetch(`${EXECHUB_BACKEND}/api/lead`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const FormsInvite: React.FC = () => {
                     <Box mb={10}>
                         <Box position={"relative"}>
                             <img src={ExecHubLogo} alt="Logo" style={{ height: '250px', width: 'auto' }} />
-                            <Box
+                            {/* <Box
                                 as="svg"
                                 position="absolute"
                                 top="0%"
@@ -116,10 +116,10 @@ const FormsInvite: React.FC = () => {
                                     points="50,0 100,100 0,100"
                                     fill="#f4f4f4"
                                 />
-                            </Box>
+                            </Box> */}
                         </Box>
 
-                        <Heading as="h2" size="3xl" mb={2} color="#ff4000">Descubra oportunidades incríveis com a gente! 😉</Heading>
+                        <Heading as="h2" size="3xl" mb={2} color="#ff4000">Descubra oportunidades incríveis com a gente!</Heading>
                         <Text>Seja um dos primeiros a experimentar a ExecHub! Preencha seus dados e tenha acesso <b color="#ff6a00">exclusivo 🚀</b> à plataforma que transforma carreiras e conecta talentos excepcionais a empresas de sucesso.</Text>
 
                         <Link href="https://www.facebook.com/exechub" mt={4}>
@@ -173,7 +173,7 @@ const FormsInvite: React.FC = () => {
                             <Box mt={6} >
                                 <RadioCardRoot defaultValue="next" style={{ borderColor: '#ff6a00' }} >
                                     <Heading as="h2" size="3xl" mb={2} color="#ff4000">Queremos saber mais sobre você!</Heading>
-                                    <Text mb={20}>Estamos ansiosos para ajudar você e ter você dentro da exechub, agora preencha as informações abaixo.</Text>
+                                    <Text mb={20}>Estamos muito felizes em tê-lo conosco na Exechub! Preencha as informações abaixo e conte com a gente para ajudá-lo em cada passo dessa jornada.</Text>
                                     <HStack align="stretch" display={"flex"} flexDirection={"column"} wrap="wrap" wordSpacing={2}>
                                         {items.map((item) => (
                                             <RadioCardItem
@@ -194,7 +194,7 @@ const FormsInvite: React.FC = () => {
                                         ))}
                                     </HStack>
                                 </RadioCardRoot>
-                                <Button type="submit" variant="outline" color={"#ff6a00"} w={200} >Quero participar! 🤩</Button>
+                                <Button type="submit" variant="outline"  w={200} >Garantir meu acesso!</Button>
                             </Box>
                         </form>
                     </Box>
