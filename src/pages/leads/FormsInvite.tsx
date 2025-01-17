@@ -220,7 +220,7 @@ const FormsInvite: React.FC = () => {
                         <Heading as="h2" size="2xl" mb={4} color="green.400">Dados enviados com sucesso!</Heading>
                         <Text fontSize="lg" color="#c2c2c2">Estamos bem feliz por ter você com a Exechub, novas possibilidades estão por vir!</Text>
                         <Text fontSize="lg" mt={10} color="#c7c7c7">Não esqueça de seguir nas redes e visualize sua caixa de spam enviamos uma mensagem de boas vindas! 🍾</Text>
-                        <Link href="https://www.exechub.com.br" mt={4} color="#ff6a00">
+                        <Link href="https://exechub.com.br" mt={4} color="#ff6a00">
                             Voltar ao site
                         </Link>
                     </Box>
