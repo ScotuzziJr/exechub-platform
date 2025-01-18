@@ -119,7 +119,7 @@ const FormsInvite: React.FC = () => {
                             </Box> */}
                         </Box>
 
-                        <Heading as="h2" size="3xl" mb={2} color="#ff4000">Descubra oportunidades incríveis com a gente!</Heading>
+                        <Heading as="h2" size="3xl" mb={2} color="#ff4000">Descubra oportunidades incríveis com a ExecHub!</Heading>
                         <Text>Seja um dos primeiros a experimentar a ExecHub! Preencha seus dados e tenha acesso <b color="#ff6a00">exclusivo 🚀</b> à plataforma que transforma carreiras e conecta talentos excepcionais a empresas de sucesso.</Text>
 
                         <Link href="https://www.facebook.com/exechub" mt={4}>

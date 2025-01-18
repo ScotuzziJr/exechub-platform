@@ -68,10 +68,10 @@ const Apresentation = () => {
                             Compartilhe sua experiência, transforme carreiras.              </Text>
                         <Stack direction="row" wordSpacing={4} justify="center" mt={4}>
                             <Link href='#informativos' >
-                                <Button colorScheme="orange" variant="solid">Informaçoes</Button>
+                                <Button colorScheme="orange" variant="solid">Informações</Button>
                             </Link>
 
-                            <Button as="a" onClick={() => navigation("/earlyadopers")} colorScheme="orange" variant="outline" borderColor="white" color="white">Garantir Invite! 🚀</Button>
+                            <Button as="a" onClick={() => navigation("/earlyadopers")} colorScheme="orange" variant="outline" borderColor="white" color="white">Junte-se agora 🚀</Button>
                             
     
                         </Stack>
@@ -147,8 +147,8 @@ const Apresentation = () => {
                     >
                         <Box mb={6}>
                             <Heading as="h2" size="4xl" mb={2} color="#ff4000">Tenha um ambiente de alto nível 🧠</Heading>
-                            <Text fontSize="larger" mb={10}>Profissionais</Text>
-                            <Text fontSize="larger" fontStyle="italic">
+                            <Text fontSize="larger" mb={10} fontStyle="italic">Profissionais</Text>
+                            <Text fontSize="larger">
                                 Com a ExecHub, você tem acesso a um ambiente de alto nível, com profissionais qualificados e experientes. Aumente sua rede de contatos e faça parte da ExecHub.
                             </Text>
                         </Box>

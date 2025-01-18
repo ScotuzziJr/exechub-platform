@@ -29,7 +29,7 @@ const Segmentation = () => {
                     <Heading as="h2" size={{ base: "xl", md: "3xl" }} color="#ff4000" mt={4} mb={2}>
                         Mentores / C-LEVEL
                     </Heading>
-                    <Heading mb={10} fontSize={{ base: "lg", md: "2xl" }}>Descubra uma nova maneira de fazer consultorias: simples, prática e eficiente com a ExecHub.</Heading>
+                    <Heading mb={10} fontSize={{ base: "lg", md: "2xl" }}>Descubra uma nova maneira de fazer consultorias: simples, prático e eficiente.</Heading>
                     <Typography fontSize={{ base: 16, md: 20 }} mb={10}>
                         Na Exechub, mentores encontram uma oportunidade única de compartilhar sua expertise e impactar carreiras em ascensão.
                     </Typography>
@@ -49,7 +49,7 @@ const Segmentation = () => {
                                 <IoBusinessOutline size={40} style={{ marginRight: "10px" }} /> C-Level as a Service
                             </Heading>
                             <Typography fontSize={{ base: 14, md: 16 }}>
-                                Imagine um espaço onde mentores podem criar salas de aula personalizadas para mentorias, facilitando a troca de conhecimento e experiências de forma estruturada e interativa. Com a ExecHub, essa visão se torna realidade, proporcionando um ambiente ideal para o desenvolvimento profissional contínuo.
+                                Junte-se à revolução do movimento Open Talent e contrate executivos sob demanda. 
                             </Typography>
                         </Box>
                     </SimpleGrid>
