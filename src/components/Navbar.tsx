@@ -1,7 +1,7 @@
-import { AppBar, Toolbar, Box, Button } from '@mui/material';
+import { AppBar, Box, Button, Toolbar } from '@mui/material';
 
-import ExecHubLogo from '../assets/images/ExecHub Logo Branco_1.png'
 import { useNavigate } from 'react-router-dom';
+import ExecHubLogo from '../assets/images/ExecHub Logo Branco_1.png';
 
 const NavBar = () => {
     const navigate = useNavigate();
@@ -24,7 +24,7 @@ const NavBar = () => {
         <img
           src={ExecHubLogo}
           alt="ExecHub Logo"
-          style={{ height: '250px', width: 'auto' }} // Adjust image size
+          style={{ height: '500px', width: 'auto' }} // Adjust image size
         />
 
         {/* Navigation Links */}

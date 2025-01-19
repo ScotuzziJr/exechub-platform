@@ -14,7 +14,7 @@ const CardsContainer = () => {
                     color: "#ff4000"
                 }}>notoriedade</b> e <b style={{
                     color: "#ff4000"
-                }}>impacte</b> carreiras com a <b style={{
+                }}>transforme</b> carreiras com a <b style={{
                     color: "#ff4000"
                 }}>ExecHub</b>.
             </Heading>

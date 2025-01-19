@@ -31,8 +31,8 @@ const Apresentation = () => {
                 {/* Header */}
                 
                     <Box as="header" textAlign="center" mb={6}>
-                    <Box px={6} as="nav" display="flex" justifyContent="space-between" alignItems="flex-end">
-                            <img src={ExecHubLogo} alt="Logo" style={{ maxWidth: '100px' }} />
+                    <Box px={6} as="nav" display="flex" justifyContent="space-between" alignItems="center">
+                            <img src={ExecHubLogo} alt="Logo" style={{ maxWidth: '200px' }} />
                             <Box display={{ base: 'block', md: 'block' }}>
                             <Stack direction="row" wordSpacing={4}>
                                     
@@ -98,7 +98,7 @@ const Apresentation = () => {
                             <Heading as="h2" size="4xl" mb={2} color="#ff4000">Executivo por demanda💎</Heading>
                             <Text fontSize="larger" mb={10} fontStyle="italic">Headhunters</Text>
                             <Text fontSize="larger">
-                                Com a ExecHub, você pode contratar executivos por demanda, de acordo com as necessidades da sua empresa. Encontre os melhores profissionais para a sua empresa com a ExecHub.
+                                O mercado exige flexibilidade e expertise em alto nível. Conectamos C-levels, especialistas e consultores a empresas que precisam de líderes estratégicos para superar desafios e alcançar resultados extraordinários.
                             </Text>
                         </Box>
                     </Box>
@@ -115,7 +115,7 @@ const Apresentation = () => {
                             <Heading as="h2" size="4xl" mb={2} color="#ff4000">Profissinais com alta performance! 💥</Heading>
                             <Text fontSize="larger" mb={10} fontStyle="italic">Headhunters</Text>
                             <Text fontSize="larger">
-                                Com a ExecHub, você encontra profissionais com alta performance e experiência para atender as demandas da sua empresa. Contrate os melhores profissionais com a ExecHub.
+                                Conectamos sua empresa aos profissionais de alta performance e ampla experiência necessários para atender às suas demandas mais desafiadoras.
                             </Text>
                         </Box>
                     </Box>
@@ -132,7 +132,7 @@ const Apresentation = () => {
                             <Heading as="h2" size="4xl" mb={2} color="#ff4000">Receba por Aula e por contratação 🤑</Heading>
                             <Text fontSize="larger" mb={10}  fontStyle="italic">Executivos / Mentores</Text>
                             <Text fontSize="larger">
-                                Com a ExecHub, você pode receber por cada aula ministrada e por cada contratação realizada. Aumente sua renda e expanda sua rede de contatos com a ExecHub.
+                                Você ganha por cada aula ministrada e por cada contratação realizada. Amplie sua renda enquanto expande sua rede de contatos e oportunidades.
                             </Text>
                         </Box>
                     </Box>
@@ -149,7 +149,7 @@ const Apresentation = () => {
                             <Heading as="h2" size="4xl" mb={2} color="#ff4000">Tenha um ambiente de alto nível 🧠</Heading>
                             <Text fontSize="larger" mb={10} fontStyle="italic">Profissionais</Text>
                             <Text fontSize="larger">
-                                Com a ExecHub, você tem acesso a um ambiente de alto nível, com profissionais qualificados e experientes. Aumente sua rede de contatos e faça parte da ExecHub.
+                                Tenha acesso a um ambiente exclusivo, repleto de profissionais qualificados e experientes. Amplie sua rede de contatos e faça parte dessa comunidade de alto nível.
                             </Text>
                         </Box>
                     </Box>
